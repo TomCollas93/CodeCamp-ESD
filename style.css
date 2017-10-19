@@ -15,10 +15,10 @@ body {
  }
 
 .img2 {
- 	width: 150px;
- 	height: 150px;
- 	margin-left: 560px;
- 	margin-top: -250px;
+ 	width: 290px;
+ 	height: 290px;
+ 	margin-left: 470px;
+ 	margin-top: -310px;
  	position: absolute;
 
  }
@@ -82,64 +82,24 @@ h1{
 	font-family: 'arial';
 	}
 
-.musique1{
+.musiqueGauche{
 	padding-left: 120px;
 	height: 130px;
 }
 
-.musique2{
+.musiqueDroite{
 	padding-left: 760px;
 	height: 130px;
 }
 
-.musique3{
-	padding-left: 120px;
-	height: 130px;
-}
-
-.musique4{
-	padding-left: 760px;
-	height: 130px;
-}
-
-.musique5{
-	padding-left: 120px;
-	height: 130px;
-}
-
-.musique6{
-	padding-left: 760px;
-	height: 130px;
-}
-
-.musique7{
-	padding-left: 120px;
-	height: 130px;
-}
-
-.musique8{
-	padding-left: 760px;
-	height: 130px;
-}
-
-.musique9{
-	padding-left: 120px;
-	height: 130px;
-}
-
-.musique10{
-	padding-left: 760px;
-	height: 130px;
-}
-
-.like1{
+.likeGauche{
  	width: 20px;
  	margin-left: 45px;
  	margin-top: 30px;
  	position: absolute;
 }
 
-.like2{
+.likeDroite{
  	width: 20px;
 	padding-left: 1200px;
  	margin-top: 30px;
@@ -157,7 +117,53 @@ footer{
     margin: 0;
 }
 
-ul li{
-	position: center;
+ul#menu_horizontal { 
+width : 600px; 
+height : 30px;
+margin : 2em 0 0 0;
+margin-left: 100px;
+background-color : none;
+color: none;
+border : 0px;
+list-style-type : none; 
 
+}
+ 
+ul#menu_horizontal li {
+padding : 0 0.5em;  
+line-height : 50px;
+
+}
+ 
+ul#menu_horizontal li.bouton_gauche {
+float : left;
+border-right : 0px dashed black; 
+}
+
+ul#menu_horizontal li.bouton_milieu {
+float : center;
+border-left : 1px dashed black;
+}
+ 
+ul#menu_horizontal li.bouton_droite {
+float : center;
+border-left : 0px dashed black;
+}
+ 
+ul#menu_horizontal a {
+color : #FFFFFF;
+text-decoration : none;
+padding : 0 0.5em; 
+font :  0.8em "Trebuchet MS";
+}
+ 
+ul#menu_horizontal a:hover { text-decoration : underline; }
+ 
+ul#menu_horizontal a img { 
+border : none;
+padding :  0 0.3em;
+}
+
+section{
+	margin-top: 100px;
 }

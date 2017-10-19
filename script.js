@@ -14,10 +14,13 @@ $.getJSON("https://api.airtable.com/v0/appCz5kTUJui5vK84/musics?api_key=key0qZJf
 								direction = "Droite";
 							}
 
-							$("<img class ='img3' src='"+rang+".png'><br><br><img class ='like"+direction+"' src='likee.png'>").appendTo('#musiques');
+							code = "<img class ='img3' src='"+rang+".png'><br><br>\
+									<article class='musique"+direction+"'><img class='like' src='likee.png'>\
+									<div><iframe src='https://open.spotify.com/embed?uri="+val.fields['spotify-link']+"&view=coverart' frameborder='0' allowtransparency='true'></iframe></div>\
+									<div>"+val.fields.Datedajout+"</div> <div>"+val.fields.hashtags+"</div>   </article>\
+							";
 
-
-        					$("<div class='musique"+direction+"'><iframe src='https://open.spotify.com/embed?uri="+val.fields['spotify-link']+"&view=coverart' frameborder='0' allowtransparency='true'></iframe></div>").appendTo('#musiques');
+							$("#musiques").append(code);
 
 							rang = rang + 1;
 
@@ -26,4 +29,3 @@ $.getJSON("https://api.airtable.com/v0/appCz5kTUJui5vK84/musics?api_key=key0qZJf
 					}
 
 );
-

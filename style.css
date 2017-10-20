@@ -39,6 +39,10 @@ h1{
 	font-family: 'Ar cena';
 	}
 
+#Musique {
+	line-height: 45px;
+}
+
 .musiqueGauche{
 	padding-left: 40px;
 	height: 130px;
@@ -52,17 +56,27 @@ h1{
 	padding-left: 0px;
 }
 
+.infosmusique {
+	margin: 40px;
+}
+
+.hashtags {
+	color: firebrick;
+	font-family: Ar cena;
+	font-size: 18px;
+}
+
 article {
 	display: flex;
 	align-items: center;
 }
 
-.like{
+.like{  					/*position des boutons like*/
  	width: 20px;
  	height: 20px;
 }
 
-iframe {
+iframe {					/*position des lecteurs Spotify*/
 	height: 80px;
 	margin: 40px;
 }
@@ -75,13 +89,11 @@ background-color : none;
 color: none;
 border : 0px;
 list-style-type : none; 
-
 }
  
 ul#menu_horizontal li { 
 display: inline;
 font-size: 0px;
-
 }
  
 ul#menu_horizontal li.bouton_gauche {
@@ -121,20 +133,68 @@ footer {
     padding: 20px;
 }
 
+footer a {
+	color: #A4A4A4;
+	text-decoration: none;
+}
+
 ul#menufooter {
 	margin-bottom: 0px;
 	text-align: center;
 	padding-left: 0;
 }
-ul#menufooter li.puces {
+
+ul#menufooter li {
 	list-style-type: none;
 	display: inline;
 	margin-right: 30px;
 	padding-left: 40px;
 	font-weight: bold;
+
 }
 
 .Pied{
 	text-align: center;
 	float: center;
 }
+
+.logoF{								/*position du logo dans le pied de page*/
+height: 70px;
+width: 70px;
+padding-left: 579px;
+padding-top: inherit;
+padding-bottom: inherit;
+}
+
+
+
+/*Page A propos*/
+
+
+
+.Apropos {
+	text-align: center;
+	font-family: Ar cena;
+	padding-top: 30px;
+	margin-left: 300px;
+	margin-right: 300px;
+	font-size: 18px;
+	word-spacing: 5px;
+	line-height: 30px;
+}
+
+
+
+/*Page contact*/
+
+
+
+.contactcolor {
+	color: firebrick;
+}
+
+.Datedajout {
+	font-family: Ar cena;
+	font-size: 18px;
+}
+
